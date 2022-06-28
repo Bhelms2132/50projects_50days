@@ -15,5 +15,46 @@ body{
     overflow: hidden;
 }
 
+.container {
+    text-align: center;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
+}
+
+/* Progress bar gray */
+.progress-container::before {
+    content: '';
+    background-color: #cccc;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+}
+
+/* Progress bar blue */
+.progress {
+    background-color: #3498db;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: -1;
+    transition: 0.4 ease;
+}
+
+
+
 
 
