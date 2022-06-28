@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+/* Custom properties */
+:root {
+  --line-border-fill: #3498db;
+  --line-border-empty: #ccc;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -31,7 +37,7 @@ body{
 /* Progress bar gray */
 .progress-container::before {
     content: '';
-    background-color: #cccc;
+    background-color: var(--line-border-empty);
     position: absolute;
     top: 50%;
     left: 0;
@@ -43,7 +49,7 @@ body{
 
 /* Progress bar blue */
 .progress {
-    background-color: #3498db;
+    background-color: var(--line-border-fill);
     position: absolute;
     top: 50%;
     left: 0;
@@ -63,10 +69,38 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid #cccc;
+    border: 3px solid var(--line-border-empty);
     transition: .4s ease;
 }
 
+/* Active circles */
+.circle.active {
+    border-color: var(--line-border-fill);
+}
 
+/* Button */
+.btn {
+    background-color: var(--line-border-fill);
+    color: #ffff;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 8px 30px;
+    margin: 5px;
+    font-size: 14px;
+}
 
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:disabled {
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
+}
 
