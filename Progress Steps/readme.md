@@ -8,8 +8,9 @@ This project has functionality to progress to the next step by clicking the 'nex
 
 ## Lessons Learned 
 
-I was introduced to the pseudo-code <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:root">:root</a>.  I learned that <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:root">:root</a> can be used in css to declare elements globaly such as asigning color to multiple elements as did with a few colors.  
+I was introduced to the pseudo-code <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:root">:root</a>.  I learned that <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:root">:root</a> can be used in css to declare elements globaly such as asigning color to multiple elements as did with a few colors.  Below is an example of the pseudo-code that was used in this poject.
 
+Pseudo-Code used:<br>
 :root {
   --line-border-fill: #3498db; <br>
   --line-border-empty: #ccc;
